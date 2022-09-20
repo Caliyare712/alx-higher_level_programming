@@ -3,8 +3,8 @@ import random
 number = random.randint(-10000, 10000)
 exe = 0
 if number < 0:
- number *= -1
- exe = 1
+    number *= -1
+    exe = 1
 lastd = number % 10
 if exe == 1:
     number *= -1
