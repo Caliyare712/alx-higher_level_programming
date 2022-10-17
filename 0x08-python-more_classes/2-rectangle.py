@@ -16,9 +16,9 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-        @property
+    @property
 
-        def width(self):
+    def width(self):
         '''method: set_width getter
         '''
         if (not isinstance(self.__width, int)) or isinstance(self.__width,
@@ -64,12 +64,12 @@ class Rectangle:
         """
         Calculate area of Rectangle.
         """
-        def area(self):
-            return self.__height * self.__width
-            """
-            Calculate perimeter of Rectangle object.
-            """
-        def perimeter(self):
-            if self.__height == 0 or self.width == 0:
-                return 0
-            return (self.__height + self.width) * 2
+    def area(self):
+        return self.__height * self.__width
+        """
+        Calculate perimeter of Rectangle object.
+        """
+    def perimeter(self):
+        if self.__height == 0 or self.width == 0:
+            return 0
+        return (self.__height + self.width) * 2
